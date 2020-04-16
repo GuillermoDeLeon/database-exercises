@@ -33,3 +33,9 @@ GROUP BY first_name, last_name
 ORDER BY COUNT(*) DESC;
 
 -- ex. 7
+SELECT COUNT(*), gender
+FROM employees
+WHERE (first_name='Irena'
+        OR first_name='Vidya'
+        OR first_name='Maya')
+GROUP BY gender;

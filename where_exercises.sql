@@ -35,8 +35,16 @@ WHERE (first_name = 'Irena'
 
 -- ex 3, section 2
 SELECT * FROM employees
-WHERE last_name
-LIKE 'e%e';
+WHERE (last_name
+        LIKE 'e%'
+        OR last_name LIKE '%e');
+
+-- ex 4, section 2
+SELECT * FROM employees
+WHERE (last_name LIKE 'e%e');
+
+-- ex 5, section 2
+
 
 
 
